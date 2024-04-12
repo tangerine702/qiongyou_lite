@@ -1,6 +1,6 @@
-# vue-qiongyou
+# vue-qiongyou-lite ||  QY-Lite轻量级页面，全页面Vue2重构【完成70%】
 
-## Project setup
+## Project setup || 项目启动
 ```
 npm install
 ```
