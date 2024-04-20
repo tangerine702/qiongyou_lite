@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="logo"><img src="https://ice.frostsky.com/2024/04/12/cd8ecc4d71934def32e2c36e4b8eba32.png" alt="cd8ecc4d71934def32e2c36e4b8eba32.png" border="0" /></div>
-        <el-menu :default-active="$route.path" class="el-menu-demo" mode="horizontal" router @select="handleSelect"
+        <el-menu :default-active="'/' +this.$route.path.split('/')[1]" class="el-menu-demo" mode="horizontal" router @select="handleSelect"
         background-color="#545c64" text-color="#fff" active-text-color="#10b041">
         <el-menu-item index="/">首页</el-menu-item>
         <el-menu-item index="/dest">目的地</el-menu-item>
