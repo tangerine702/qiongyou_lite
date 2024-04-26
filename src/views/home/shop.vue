@@ -7,18 +7,20 @@
             <div class="list">
                 <el-row :gutter="10">
                     <el-col :xs="8" :sm="8" :md="8" :lg="8" :xl="8" v-for="item in shoplist">
-                        <div class="grid-content bg-purple card">
-                            <div class="pic">
-                                <img :src=item.pic alt="">
+                        <a :href=item.url>
+                            <div class="grid-content bg-purple card">
+                                <div class="pic">
+                                    <img :src=item.pic alt="">
+                                </div>
+                                <div class="desc">
+                                    <div class="title">{{ item.title }}</div>
+                                    <div class="mark">{{ item.tag }}</div>
+                                    <div class="price" v-html="item.price"></div>
+                                </div>
                             </div>
-                            <div class="desc">
-                                <div class="title">{{ item.title }}</div>
-                                <div class="mark">{{ item.tag }}</div>
-                                <div class="price" v-html="item.price"></div>
-                            </div>
-                        </div>
+                        </a>
                     </el-col>
-                    
+
                 </el-row>
 
 
@@ -30,15 +32,15 @@
 <script>
 export default {
     //getHomeShop
-    data(){
-        return{
-            shoplist:[]
+    data() {
+        return {
+            shoplist: []
         }
     },
-    methods:{
-        async getHomeShop(){
+    methods: {
+        async getHomeShop() {
             let res = await this.$api.getHomeShop()
-            //console.log(res);
+            console.log(res);
             this.shoplist = res.data.data
         }
     },
@@ -51,7 +53,7 @@ export default {
 <style lang="less" scoped>
 .shop {
     background: linear-gradient(180deg, #6dd27c, #1bcdae);
-    
+
     .content {
         width: 1160px;
 
@@ -70,6 +72,7 @@ export default {
     display: flex;
     margin-bottom: 20px;
     background: #fff;
+
     .pic {
         display: flex;
 
@@ -84,6 +87,7 @@ export default {
         flex: 1;
         position: relative;
         padding-left: 10px;
+
         .title {
             margin-right: 3px;
             max-height: 52px;
@@ -120,7 +124,4 @@ export default {
     }
 
 }
-
-
-
 </style>

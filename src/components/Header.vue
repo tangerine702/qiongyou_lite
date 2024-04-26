@@ -6,8 +6,8 @@
         <el-menu-item index="/">首页</el-menu-item>
         <el-menu-item index="/dest">目的地</el-menu-item>
         <el-menu-item index="/community">社区</el-menu-item>
-        <!-- <el-menu-item index="/travel">行程助手</el-menu-item>
-        <el-submenu index="5">
+        <el-menu-item index="/travel">行程助手</el-menu-item>
+        <!-- <el-submenu index="5">
             <template slot="title">我的工作台</template>
             <el-menu-item index="2-1">选项1</el-menu-item>
             <el-menu-item index="2-2">选项2</el-menu-item>

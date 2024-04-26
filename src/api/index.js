@@ -37,10 +37,14 @@ export default{
     getCommunity(){
         return axios.get(base.Community)
     },
-    gettoMove(params){
-        return axios.get(base.to_move,{
-            params
-        })
+    gettoMove(){
+        return axios.post(base.to_move,{
+            
+        },{headers:{
+            'keyword':'',
+            'page':1
+           
+        }})
     },
     getkeytxt(){
         return axios.get(base.keytxt)

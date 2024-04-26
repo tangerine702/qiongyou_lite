@@ -64,6 +64,7 @@ export default {
   }
 
   li {
+    position: relative;
     margin-top: 30px;
   }
 
@@ -121,7 +122,7 @@ export default {
 .ylc-line {
   position: absolute;
   left: 23px;
-  top: 230px;
+  top: 23px;
   height: 100%;
   z-index: -1;
   border-left: 1px solid #ececec;

@@ -125,13 +125,16 @@ a{
         color: #636363;
         .tag{
             position: absolute;
-            top: -4px;
-            left: -1px;
+            top: 0;
+            left: 1px;
             color: #000000;
             height: 20px;
             border: 1px solid #717171;
-            width: 100%;
+            width: 98%;
             text-align: center;
+            border-radius: 6px;
+            background: #29A543;
+            color: #fff;
         }
         .left {
             display: inline-block;
@@ -158,6 +161,7 @@ a{
         margin-bottom: 0;
     }
 }
+
 svg{
     width: 10px;
     height: 10px;

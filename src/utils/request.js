@@ -26,7 +26,7 @@ instance.interceptors.request.use(function (config) {//config发送请求的配�
     //对post请求处理参数
     if(config.method =='post'){
         config.data = qs.stringify(config.data)
-        //console.log(config)
+        console.log(config)
     }
     // 在发送请求之前做些什么--对post请求参数 处理字符串拼接
     return config;

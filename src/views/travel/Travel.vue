@@ -22,7 +22,7 @@
 export default {
   data(){
     return{
-      isShow:false
+      isShow:true
     }
   },
   methods:{
@@ -31,9 +31,9 @@ export default {
       
       
     },
-    gettoMove(val){
+    gettoMove(){
       this.$api.gettoMove({
-        keyword:val
+        //keyword:val
       }).then(res=>{
         console.log(res,111)
       })
@@ -42,7 +42,7 @@ export default {
   },
   created(){
     this.gettoMove();
-    this.getkeytxt();
+    //this.getkeytxt();
   }
 }
 </script>

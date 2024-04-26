@@ -92,7 +92,7 @@ export default {
       this.$api.getSearch({
         keyword: val
       }).then(res => {
-        //console.log(res.data)
+        console.log(res.data)
         this.searchlist = res.data.data.list
         //console.log(this.searchlist)
       })
