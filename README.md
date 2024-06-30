@@ -1,4 +1,4 @@
-# vue-qiongyou-lite ||  QY-Lite轻量级页面，全页面Vue2重构【完成60%】
+# vue-qiongyou-lite ||  QY-Lite轻量级页面，基础页面Vue2重构
 
 ## Project setup || 项目启动
 ```
